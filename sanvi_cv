@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Hasibul Hasan - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-tag {
+            background: #eff6ff;
+            color: #1e40af;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold gradient-text">HH.</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#education" class="hover:text-blue-600 transition">Education</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-slate-600" id="menu-btn">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto flex flex-col items-center text-center">
+            <div class="w-32 h-32 rounded-full bg-blue-100 flex items-center justify-center mb-6 overflow-hidden border-4 border-blue-50">
+                <i class="fa-solid fa-user-tie text-5xl text-blue-500"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Md. Hasibul Hasan</h1>
+            <p class="text-xl text-slate-600 max-w-2xl">
+                Ambitious Student & Aspiring Professional
+            </p>
+            <div class="flex space-x-4 mt-8">
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200">Get In Touch</a>
+                <button onclick="window.print()" class="bg-white border border-slate-200 px-8 py-3 rounded-lg font-semibold hover:bg-slate-50 transition">Download CV</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-16 space-y-16">
+        
+        <!-- About Section -->
+        <section id="about" class="grid md:grid-cols-3 gap-12 items-start">
+            <div class="md:col-span-1">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <span class="w-8 h-1 bg-blue-600 mr-3"></span>About Me
+                </h2>
+            </div>
+            <div class="md:col-span-2 text-slate-600 leading-relaxed">
+                <p>
+                    A highly motivated and dedicated individual with a passion for excellence in academic and professional pursuits. 
+                    I am committed to continuous learning and am eager to leverage my skills in a dynamic environment where I can 
+                    contribute to impactful projects and grow as a professional.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <span class="w-8 h-1 bg-blue-600 mr-3"></span>Experience
+                </h2>
+            </div>
+            <div class="md:col-span-2 space-y-8">
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600"></div>
+                    <h3 class="text-lg font-bold">Office Assistant (Intern)</h3>
+                    <p class="text-blue-600 font-medium text-sm">Local Firm | June 2023 - August 2023</p>
+                    <ul class="mt-4 space-y-2 text-slate-600 list-disc ml-4">
+                        <li>Managed administrative tasks and organized documentation.</li>
+                        <li>Assisted in data entry and basic reporting for the management team.</li>
+                        <li>Coordinated communication between departments to streamline operations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <span class="w-8 h-1 bg-blue-600 mr-3"></span>Education
+                </h2>
+            </div>
+            <div class="md:col-span-2 space-y-8">
+                <div class="bg-white p-6 rounded-xl border border-slate-200 section-card">
+                    <h3 class="font-bold text-lg">Bachelor of Science</h3>
+                    <p class="text-slate-600">State University | 2020 - 2024 (Ongoing)</p>
+                    <p class="text-sm mt-2 text-blue-600 font-medium">Major in Computer Science & Engineering</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 section-card">
+                    <h3 class="font-bold text-lg">Higher Secondary Certificate</h3>
+                    <p class="text-slate-600">City College | 2018 - 2020</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <span class="w-8 h-1 bg-blue-600 mr-3"></span>Skills
+                </h2>
+            </div>
+            <div class="md:col-span-2">
+                <div class="flex flex-wrap -m-1">
+                    <span class="skill-tag">Microsoft Office Suite</span>
+                    <span class="skill-tag">Data Entry</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                    <span class="skill-tag">Time Management</span>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Bengali (Native)</span>
+                    <span class="skill-tag">English (Fluent)</span>
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Adaptability</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <span class="w-8 h-1 bg-blue-600 mr-3"></span>Contact
+                </h2>
+            </div>
+            <div class="md:col-span-2">
+                <div class="bg-blue-600 rounded-2xl p-8 text-white shadow-xl shadow-blue-200">
+                    <p class="mb-6 text-blue-100">Feel free to reach out for collaborations or opportunities!</p>
+                    <div class="space-y-4">
+                        <a href="mailto:hasibul.hasan@example.com" class="flex items-center space-x-4 hover:bg-white/10 p-2 rounded-lg transition">
+                            <i class="fa-solid fa-envelope w-6"></i>
+                            <span>hasibul.hasan@example.com</span>
+                        </a>
+                        <div class="flex items-center space-x-4 p-2">
+                            <i class="fa-solid fa-phone w-6"></i>
+                            <span>+880 1234 567890</span>
+                        </div>
+                        <div class="flex items-center space-x-4 p-2">
+                            <i class="fa-solid fa-location-dot w-6"></i>
+                            <span>Dhaka, Bangladesh</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-8 border-t border-white/20 flex space-x-6">
+                        <a href="#" class="text-2xl hover:text-blue-200 transition"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-200 transition"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-200 transition"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white py-8 border-t border-slate-200 text-center text-slate-500 text-sm">
+        <p>&copy; <span id="year"></span> Md. Hasibul Hasan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Update year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle logic
+        const menuBtn = document.getElementById('menu-btn');
+        // Since we are in a single file, mobile menu can be enhanced here if needed
+        menuBtn.addEventListener('click', () => {
+            alert('Navigation menu for mobile. In a production app, this would open a side drawer.');
+        });
+    </script>
+</body>
+</html>
+
